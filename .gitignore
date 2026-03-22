@@ -1,0 +1,20 @@
+# --- JAVA / MAVEN (Backend) ---
+target/
+!wallet-backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+*.log
+wallet-backend/.mvn/
+
+# --- NODE / REACT (Frontend) ---
+wallet-frontend/node_modules/
+wallet-frontend/dist/
+wallet-frontend/.env*
+wallet-frontend/npm-debug.log*
+
+# --- IDE (IntelliJ / OS) ---
+wallet-backend/.idea/
+*.iml
+.DS_Store
