@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
-@RestController // Macht diese Klasse zu einer REST-API
-@RequestMapping("/api/wallets") // Basis-URL für alle Endpunkte in dieser Klasse
+@CrossOrigin(origins = {"http://localhost:5173", "https://wallet-service-rosy.vercel.app"})
+@RestController
+@RequestMapping("/api/wallets")
 @RequiredArgsConstructor
 public class WalletController {
 
@@ -44,6 +44,6 @@ public class WalletController {
     // PUT http://localhost:8080/api/wallets/1/withdraw?amount=100
     @PutMapping("/{id}/withdraw")
     public Wallet withdraw(@PathVariable Long id, @RequestParam BigDecimal amount) {
-        return walletService.withdraw(id, amount); // Der Controller ruft nur den Service auf!
+        return walletService.withdraw(id, amount);
     }
 }

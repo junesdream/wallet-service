@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be4c00f-3aa5-48b4-b095-8680d1918bc3" name="Changes" comment="fix: corrected folder name with hyphen in ci pipeline">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-pipeline.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci-pipeline.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wallet-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-frontend/src/App.tsx" afterDir="false" />
+    <list default="true" id="7be4c00f-3aa5-48b4-b095-8680d1918bc3" name="Changes" comment="chore: silenced linter for deployment">
+      <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/WalletController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +191,7 @@
       <workItem from="1774218202874" duration="41000" />
       <workItem from="1774218248410" duration="4111000" />
       <workItem from="1774487666545" duration="410000" />
-      <workItem from="1774488090657" duration="4776000" />
+      <workItem from="1774488090657" duration="5210000" />
     </task>
     <task id="LOCAL-00001" summary="fix: corrected directory paths in CI pipeline">
       <option name="closed" value="true" />
@@ -211,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774491161655</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: silenced linter for deployment">
+      <option name="closed" value="true" />
+      <created>1774493438572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1774493438572</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +226,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: corrected directory paths in CI pipeline" />
     <MESSAGE value="fix: corrected folder name with hyphen in ci pipeline" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: corrected folder name with hyphen in ci pipeline" />
+    <MESSAGE value="chore: silenced linter for deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: silenced linter for deployment" />
   </component>
 </project>
