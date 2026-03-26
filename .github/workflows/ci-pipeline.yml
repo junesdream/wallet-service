@@ -21,7 +21,7 @@ jobs:
 
       - name: Build Backend with Maven
         run: |
-          cd backend
+          cd wallet backend
           ./mvnw clean package -DskipTests
 
   build-frontend:
