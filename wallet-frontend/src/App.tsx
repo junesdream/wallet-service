@@ -8,7 +8,7 @@ function App() {
     const [history, setHistory] = useState<any[]>([]);
     const [amount, setAmount] = useState<string>('');
 
-    const API_BASE_URL = (window as any).process?.env?.REACT_APP_API_URL || "http://localhost:8080";
+    const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8080";
     const API_BASE = `${API_BASE_URL}/api/wallets/1`;
 
     const fetchData = useCallback(async () => {
