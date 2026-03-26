@@ -1,0 +1,23 @@
+### 1. Ein Wallet für June erstellen
+POST http://localhost:8080/api/wallets?owner=June&balance=500.00
+
+### 2. Alle Wallets anzeigen (Check)
+GET http://localhost:8080/api/wallets
+
+### 3. 150.50 Euro einzahlen
+PUT http://localhost:8080/api/wallets/1/deposit?amount=150.50
+
+### 4. 100 Euro abheben (Sollte klappen)
+PUT http://localhost:8080/api/wallets/1/withdraw?amount=100
+
+### 5. 2000 Euro abheben (Sollte FEHLER geben!)
+PUT http://localhost:8080/api/wallets/1/withdraw?amount=2000
+
+### 6. Den Verlauf (History) von Wallet 1 abrufen
+GET http://localhost:8080/api/wallets/1/history
+
+### 7. Nochmal einzahlen, um die History zu füllen
+PUT http://localhost:8080/api/wallets/1/deposit?amount=200.00
+
+### 78 Erneut History checken (Sollte jetzt mehr Einträge haben)
+GET http://localhost:8080/api/wallets/1/history

@@ -1,0 +1,71 @@
+/* Globale Matrix-Basis */
+body {
+    margin: 0;
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+}
+
+.matrix-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.matrix-border {
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #0f0;
+    padding: 30px;
+    box-shadow: 0 0 20px #0f0;
+    background-color: #000;
+}
+
+.matrix-card {
+    background-color: #050505;
+    padding: 20px;
+    border: 1px solid #0f0;
+    margin-bottom: 20px;
+}
+
+.matrix-input {
+    background-color: #000;
+    border: none;
+    border-bottom: 2px solid #0f0;
+    color: #0f0;
+    font-size: 2rem;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+.btn-deposit {
+    flex: 1;
+    background: #000;
+    border: 2px solid #0f0;
+    color: #0f0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-withdraw {
+    flex: 1;
+    background: #000;
+    border: 2px solid #f00;
+    color: #f00;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.log-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border-top: 1px solid #050;
+}
