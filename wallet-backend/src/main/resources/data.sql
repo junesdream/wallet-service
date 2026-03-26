@@ -1,0 +1,1 @@
+INSERT INTO wallets (id, balance) (SELECT 1, 1000.0 WHERE NOT EXISTS (SELECT 1 FROM wallets WHERE id = 1));
