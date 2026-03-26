@@ -11,18 +11,16 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor // Erstellt automatisch den Konstruktor für das Repository (Dependency Injection)
+@RequiredArgsConstructor
 public class WalletService {
 
     private final WalletRepository walletRepository;
     private final TransactionRepository transactionRepository;
 
-    // Alle Wallets abrufen
     public List<Wallet> getAllWallets() {
         return walletRepository.findAll();
     }
 
-    // Ein neues Wallet erstellen
     public Wallet createWallet(String owner, BigDecimal initialBalance) {
         Wallet wallet = new Wallet();
         wallet.setOwnerName(owner);
@@ -31,7 +29,6 @@ public class WalletService {
         return walletRepository.save(wallet);
     }
 
-    // Geld einzahlen
     public Wallet deposit(Long id, BigDecimal amount) {
         Wallet wallet = walletRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Wallet nicht gefunden!"));
@@ -40,7 +37,6 @@ public class WalletService {
         return walletRepository.save(wallet);
     }
 
-    // Geld abheben (mit Prüfung)
     public Wallet withdraw(Long id, BigDecimal amount) {
         Wallet wallet = walletRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Wallet nicht gefunden!"));
@@ -54,7 +50,6 @@ public class WalletService {
         return walletRepository.save(wallet);
     }
 
-    // NEU: Verlauf abrufen
     public List<Transaction> getHistory(Long walletId) {
         return transactionRepository.findByWalletIdOrderByTimestampDesc(walletId);
     }

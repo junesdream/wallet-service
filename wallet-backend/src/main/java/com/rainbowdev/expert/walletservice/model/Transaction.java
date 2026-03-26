@@ -16,7 +16,7 @@ public class Transaction {
     private Long id;
 
     private Long walletId;
-    private String type; // "DEPOSIT" oder "WITHDRAW"
+    private String type;
     private BigDecimal amount;
     private LocalDateTime timestamp;
 

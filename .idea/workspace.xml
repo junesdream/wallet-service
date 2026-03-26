@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7be4c00f-3aa5-48b4-b095-8680d1918bc3" name="Changes" comment="chore: silenced linter for deployment">
-      <change afterPath="$PROJECT_DIR$/wallet-backend/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wallet-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/WalletController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/model/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/repository/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/repository/WalletRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/service/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/service/WalletService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-frontend/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,46 +60,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.wallet-tests | 1. Ein Wallet für June erstellen.executor": "Run",
-    "HTTP Request.wallet-tests | 2. Alle Wallets anzeigen (Check).executor": "Run",
-    "HTTP Request.wallet-tests | 3. 150.50 Euro einzahlen.executor": "Run",
-    "HTTP Request.wallet-tests | 4. 100 Euro abheben (Sollte klappen).executor": "Run",
-    "HTTP Request.wallet-tests | 5. 2000 Euro abheben (Sollte FEHLER geben!).executor": "Run",
-    "HTTP Request.wallet-tests | 5. Den Verlauf (History) von Wallet 1 abrufen.executor": "Run",
-    "HTTP Request.wallet-tests | 6. Den Verlauf (History) von Wallet 1 abrufen.executor": "Run",
-    "HTTP Request.wallet-tests | 6. Nochmal einzahlen, um die History zu füllen.executor": "Run",
-    "HTTP Request.wallet-tests | 7. Erneut History checken (Sollte jetzt mehr Einträge haben).executor": "Run",
-    "HTTP Request.wallet-tests | 7. Nochmal einzahlen, um die History zu füllen.executor": "Run",
-    "HTTP Request.wallet-tests | 78 Erneut History checken (Sollte jetzt mehr Einträge haben).executor": "Run",
-    "JUnit.WalletServiceTest.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.WalletServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/june/programming/wallet-service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/june/programming/wallet-service/wallet-frontend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.wallet-tests | 1. Ein Wallet für June erstellen.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 2. Alle Wallets anzeigen (Check).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 3. 150.50 Euro einzahlen.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 4. 100 Euro abheben (Sollte klappen).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 5. 2000 Euro abheben (Sollte FEHLER geben!).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 5. Den Verlauf (History) von Wallet 1 abrufen.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 6. Den Verlauf (History) von Wallet 1 abrufen.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 6. Nochmal einzahlen, um die History zu füllen.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 7. Erneut History checken (Sollte jetzt mehr Einträge haben).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 7. Nochmal einzahlen, um die History zu füllen.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.wallet-tests | 78 Erneut History checken (Sollte jetzt mehr Einträge haben).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WalletServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.WalletServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/june/programming/wallet-service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/june/programming/wallet-service/wallet-frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wallet-backend" />
@@ -118,7 +122,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WalletServiceTest">
+  <component name="RunManager" selected="Spring Boot.WalletServiceApplication">
     <configuration name="wallet-tests | 6. Den Verlauf (History) von Wallet 1 abrufen" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/wallet-tests.http" executionIdentifier="6. Den Verlauf (History) von Wallet 1 abrufen" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -167,8 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WalletServiceTest" />
         <item itemvalue="Spring Boot.WalletServiceApplication" />
+        <item itemvalue="JUnit.WalletServiceTest" />
         <item itemvalue="HTTP Request.wallet-tests | 7. Nochmal einzahlen, um die History zu füllen" />
         <item itemvalue="HTTP Request.wallet-tests | 78 Erneut History checken (Sollte jetzt mehr Einträge haben)" />
         <item itemvalue="HTTP Request.wallet-tests | 6. Den Verlauf (History) von Wallet 1 abrufen" />
@@ -195,7 +199,8 @@
       <workItem from="1774218202874" duration="41000" />
       <workItem from="1774218248410" duration="4111000" />
       <workItem from="1774487666545" duration="410000" />
-      <workItem from="1774488090657" duration="11604000" />
+      <workItem from="1774488090657" duration="12128000" />
+      <workItem from="1774551443087" duration="2734000" />
     </task>
     <task id="LOCAL-00001" summary="fix: corrected directory paths in CI pipeline">
       <option name="closed" value="true" />

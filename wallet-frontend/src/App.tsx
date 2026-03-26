@@ -9,7 +9,7 @@ function App() {
     const [amount, setAmount] = useState<string>('');
 
     // @ts-ignore
-    const API_BASE_URL = "https://wallet-service-production-a25e.up.railway.app";
+    const API_BASE_URL = "http://localhost:8080";
     const API_BASE = `${API_BASE_URL}/api/wallets/1`;
 
     const fetchData = useCallback(async () => {
@@ -32,7 +32,7 @@ function App() {
         try {
             await axios.put(`${API_BASE}/${type}?amount=${amount}`);
             setAmount('');
-            fetchData(); // JETZT findet er fetchData wieder!
+            fetchData();
         } catch (err: any) {
             alert(`]] ERROR: ${err.response?.data?.error || 'Unknown'}`);
         }

@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.Map;
 
-@ControllerAdvice // Diese Klasse "beobachtet" alle Controller auf Fehler
+@ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(RuntimeException.class) // Wenn eine RuntimeException geworfen wird...
+    @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<Object> handleRuntime(RuntimeException e) {
         return ResponseEntity
-                .status(400) // ...sende Status 400 (Bad Request)
-                .body(Map.of("error", e.getMessage())); // ...und diese JSON-Nachricht
+                .status(400)
+                .body(Map.of("error", e.getMessage()));
     }
 }
