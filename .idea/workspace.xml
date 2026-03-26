@@ -7,6 +7,7 @@
     <list default="true" id="7be4c00f-3aa5-48b4-b095-8680d1918bc3" name="Changes" comment="chore: silenced linter for deployment">
       <change afterPath="$PROJECT_DIR$/wallet-backend/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-backend/src/main/java/com/rainbowdev/expert/walletservice/controller/WalletController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet-frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-frontend/src/App.tsx" afterDir="false" />
     </list>
@@ -194,7 +195,7 @@
       <workItem from="1774218202874" duration="41000" />
       <workItem from="1774218248410" duration="4111000" />
       <workItem from="1774487666545" duration="410000" />
-      <workItem from="1774488090657" duration="8259000" />
+      <workItem from="1774488090657" duration="11604000" />
     </task>
     <task id="LOCAL-00001" summary="fix: corrected directory paths in CI pipeline">
       <option name="closed" value="true" />
