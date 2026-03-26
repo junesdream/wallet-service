@@ -11,7 +11,6 @@ function App() {
     const API_BASE_URL = (window as any).process?.env?.REACT_APP_API_URL || "http://localhost:8080";
     const API_BASE = `${API_BASE_URL}/api/wallets/1`;
 
-    // fetchData als useCallback, damit es überall im Code verfügbar ist
     const fetchData = useCallback(async () => {
         try {
             const walletRes = await axios.get(`${API_BASE_URL}/api/wallets`);
